@@ -1,3 +1,4 @@
+'use client';
 import { useToast } from '@/components/ui/use-toast';
 import {
   UserRegistrationProps,
@@ -93,4 +94,10 @@ export const useSignUpForm = () => {
       }
     }
   );
+  return {
+    methods,
+    onHandleSubmit,
+    onGenerateOTP,
+    loading,
+  };
 };

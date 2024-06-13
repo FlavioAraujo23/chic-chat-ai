@@ -1,6 +1,7 @@
 import SignUpFormProvider from '@/components/forms/sign-up/form-provider';
 import React from 'react';
 import RegistrationFormStep from './../../../components/forms/sign-up/registration-step';
+import ButtonHandler from '@/components/forms/sign-up/button-handlers';
 
 const SignUp = () => {
   return (
@@ -9,7 +10,9 @@ const SignUp = () => {
         <SignUpFormProvider>
           <div className="flex flex-col gap-3">
             <RegistrationFormStep />
+            <ButtonHandler />
           </div>
+          
         </SignUpFormProvider>
       </div>
     </section>
